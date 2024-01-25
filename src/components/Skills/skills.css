@@ -1,0 +1,72 @@
+#skills{
+    min-height: calc(100vh - 4rem);
+    margin: 0 auto;
+    width: 100vw;
+    max-width: 50rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 1rem;
+    padding-bottom: 15rem;
+}
+
+.skillsTitle{
+    margin: 1rem 0;
+    font-size: 3rem;
+}
+
+.skillsDesc{
+    font-weight: 300;
+    font-size: 1rem;
+    padding-bottom: 2rem;
+    max-width: 40rem;
+}
+
+.skillsImg{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   width: 100vw;
+   max-width: 65rem;
+   flex-wrap: wrap;
+   width: auto;
+   padding-bottom: 0.5rem;
+}
+
+.skillsImg{
+    object-fit: cover;
+    height: 5rem;
+    margin: 1rem;
+}
+
+.skillsBtn{
+    padding: 0.5rem 2.5rem;
+    border: none;
+    background: white;
+    border-radius: 2rem;
+    font-size: 1rem;
+    margin: 10rem 0;
+    cursor: pointer;
+}
+
+.skillsBtn:hover{
+    border-bottom:4px solid yellow;
+}
+
+@media screen and (max-width:585px) {
+    .skillsImg{
+      height: 20vw;
+      overflow-y: scroll;
+    }
+
+    .skillsBtn{
+        margin-top: 2rem;
+    }
+
+    
+
+   
+    
+}

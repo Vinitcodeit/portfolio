@@ -1,0 +1,85 @@
+#exp{
+    overflow: hidden;
+    width: 100vw;
+    max-width: 45rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.expTitle{
+    font-size: 3rem;
+    font-weight: 600;
+    padding-top: 3rem;
+    margin-bottom: 1.5rem;
+}
+
+.expCompany{
+    font-weight: 400;
+    max-width: 50vw;
+    padding: 0 2rem;
+    text-align: left; 
+    padding-bottom: 2rem;
+}
+
+
+
+.expDesc{
+    font-weight: 200;
+    font-size: 1rem;
+    max-width: 500rem;
+    padding: 0 2rem;
+    text-align: left;
+}
+
+.expBars{
+    margin: 1.5rem;
+    width: 100vw;
+    max-width: 100%;
+    text-align: left;
+    padding-left: 1rem;
+    margin: auto;
+}
+
+.expBar{
+    display: flex;
+    margin: 1rem;
+    padding: 1.5rem 2rem;
+    padding-left: 2rem;
+    border-radius: 0.5rem;
+    background: rgb(50, 50, 50);
+}
+
+.expBarImg{
+    object-fit: cover;
+    height: 3rem;
+    width: 3rem;
+    margin-right: 2rem;
+}
+
+.expBarText>p{
+  font-size: 0.9rem;
+  font-weight: 200;
+}
+
+@media screen and (max-width:720px) {    
+.expBarText>p{
+    font-size: 2vw;
+}
+}
+
+
+@media screen and (max-width:480px) {    
+.expBarText>p{
+    font-size: 3vw;
+}
+.expBarImg{
+    height: 2.25rem;
+    width: 2.2.5rem;
+}
+.expBarText>h2{
+    font-size: 5vw;
+}
+}

@@ -1,0 +1,68 @@
+.projectPage{
+    min-height: calc(100vh - 4rem);
+    margin: 0 auto;
+    width: 100vw;
+    max-width: 50rem;
+}
+
+.projectPageTitle{
+   justify-content: center;
+   margin: auto;
+   align-items: center;
+   display: flex;
+   font-size: 3rem;
+   padding-bottom: 1rem;
+   margin-top: -20rem;
+}
+
+#projDesc{
+  justify-content: center;
+   margin: auto;
+   align-items: center;
+   display: flex;
+   padding-bottom: 1rem;
+
+}
+
+
+
+.projectName1{
+    background: rgb(50, 50, 50);
+    padding: 1rem;
+    border-radius: 0.75rem;
+    margin: 2rem 1rem;
+}
+.projectName2{
+    background: rgb(50, 50, 50);
+    padding: 1rem;
+    border-radius: 0.75rem;
+    margin: 2rem 1rem;
+}
+.projectName3{
+    background: rgb(50, 50, 50);
+    padding: 1rem;
+    border-radius: 0.75rem;
+    margin: 2rem 1rem;
+}
+.projectName4{
+    background: rgb(50, 50, 50);
+    padding: 1rem;
+    border-radius: 0.75rem;
+    margin: 2rem 1rem;
+}
+
+.project1Desc{
+    font-weight: 300;
+}
+
+@media screen and (max-width:585px) {
+    .projectPageTitle{
+      height: 20vw;
+    
+    }
+
+    .projectPage{
+        margin-top: -20rem;
+    }
+
+}
