@@ -13,7 +13,7 @@ const Intro = () => {
 
   const githubProfileUrl = 'https://github.com/Vinitcodeit'
 
-  const resumeUrl = 'https://drive.google.com/file/d/1EOk1AAXgz6YaAws3xmc86SztPkBF_qi2/view?usp=drive_link'
+  const resumeUrl = 'https://drive.google.com/file/d/1OFT3BwLRz8BJFsq3w8ssnfZifZUn2znB/view?usp=drive_link'
 
   const openLinkedInProfile = () => {
     window.open(linkedInProfileUrl);
