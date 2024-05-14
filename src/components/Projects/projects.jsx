@@ -8,10 +8,17 @@ const Projects = () => {
   const ecommerceHandleClick = ()=>{
     window.open(ecommerceUrl)
   }
+
   const youtubeUrl = 'https://shubho-youtube-mern.netlify.app/'
   
   const youtubeHandleClick = ()=>{
     window.open(youtubeUrl)
+  }
+
+  const portfolioUrl = 'https://vinit-portfoilio-mern.vercel.app/'
+  
+  const portfolioHandleClick = ()=>{
+    window.open(portfolioUrl)
   }
 
   return (
@@ -39,7 +46,7 @@ const Projects = () => {
           </p>
         </div>
 
-        <div className="projectName3">
+        <div onClick={portfolioHandleClick} className="projectName3">
           <h2 className="project1">3. Personal Portfolio Website.</h2>
           <p className="project1Desc">
             Designed and implemented a personal portfolio website using HTML,
