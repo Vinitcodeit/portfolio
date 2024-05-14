@@ -2,13 +2,32 @@ import React from "react";
 import "./intro.css";
 import bg from "../../assets/bgimg.png";
 import { Link } from "react-scroll";
-import btnImg from "../../assets/hireme.png";
-import Insta from "../../assets/instagram.png"
-import Twitter from "../../assets/twitter.png"
-import Facebook from "../../assets/facebook-icon.png"
+import btnImg from "../../assets/resume.png";
+import github from '../../assets/github1.png'
 import Linkedin from "../../assets/linkedin.png"
 
+
 const Intro = () => {
+
+  const linkedInProfileUrl = 'https://linkedin.com/in/vinit-tambralli-864049219';
+
+  const githubProfileUrl = 'https://github.com/Vinitcodeit'
+
+  const resumeUrl = 'https://drive.google.com/file/d/1EOk1AAXgz6YaAws3xmc86SztPkBF_qi2/view?usp=drive_link'
+
+  const openLinkedInProfile = () => {
+    window.open(linkedInProfileUrl);
+  };
+
+  const openGithubProfile = () => {
+    window.open(githubProfileUrl);
+  };
+
+  const openResumeProfile = () => {
+    window.open(resumeUrl);
+  };
+
+
   return (
     <section id="intro">
       <div className="introContent">
@@ -22,34 +41,21 @@ const Intro = () => {
           in Frontend and Backend Technologies.
         </p>
         <Link>
-          <button className="btn">
-            <img src={btnImg} alt="Hire" className="btnImg" />
-            Hire Me
+          <button onClick={openResumeProfile} className="btn">
+            <img  src={btnImg} alt="Hire" className="btnImg" />
+            <span className="resume">Resume</span>
           </button>
-  
         </Link>
          
         <div className="sm">
-        <img src={Insta} alt="insta"    className="ig" />
-        <img src={Twitter} alt="twitter" className="tweet" />
-        <img src={Facebook} alt="fbk" className="fb" />
-        <img src={Linkedin} alt="ln" className="linkedin" />
+        <img onClick={openLinkedInProfile} src={Linkedin} alt="ln" className="linkedin" />
+        <img onClick={openGithubProfile} src={github} alt="ln" className="github" />     
        </div>
-       
-      
+
       </div>
-
       
-      
-      
-      
-
       <img src={bg} alt="profile" className="bg" />
-
-      
     </section>
-
-   
   );
 };
 

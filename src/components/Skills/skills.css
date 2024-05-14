@@ -57,9 +57,27 @@
 
 @media screen and (max-width:585px) {
     .skillsImg{
-      height: 20vw;
+      height: 10vh;
       overflow-y: scroll;
+
     }
+   
+    ::-webkit-scrollbar {   
+        width: 6px;
+      }
+
+      ::-webkit-scrollbar-track {
+        background: #f1f1f1; /* Color of the track */
+        border-radius: 5px;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #888; /* Color of the scrollbar handle */
+        border-radius: 5px; /* Roundness of the scrollbar handle */
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: #555; /* Color of the scrollbar handle on hover */
+      }
+      
 
     .skillsBtn{
         margin-top: 2rem;

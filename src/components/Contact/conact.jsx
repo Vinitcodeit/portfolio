@@ -39,21 +39,25 @@ const Conact = () => {
             rows="5"
             placeholder="Your Message"
           ></textarea>
-
+        
+      
 
      </form>
+     </div> 
      <button type="submit" className="submitBtn" onClick={sendEmail}>
             Submit
           </button>
-
-    {/* <section className="adress">
+  
+          <section className="adress">
             <div className="myName">
-              <h1>Vinit Tambralli</h1>
-            </div>
-            <div className="myGmail">vtambralli412@gmail.com</div>
-            <div className="myNumber">7406877762</div>
-            <div className="myAdress">BTM Layout, Bangalore </div>
-  </section> */}
+              <h1>Name: Vinit Tambralli</h1>
+            </div><br />
+
+            <div className="myGmail">Gmail:vtambralli412@gmail.com</div><br />
+            <div className="myNumber">Number: 7406877762</div><br />
+            <div className="myAdress">Address: BTM Layout, Bangalore </div>
+  </section>
+    
 
       
 
@@ -63,7 +67,7 @@ const Conact = () => {
             <img src={YoutubeIcon} alt="youtube" className="link" />
             <img src={InstaIcon} alt="instagram" className="link" />
           </div>*/}
-  </div> 
+  
 
     </section>
   );

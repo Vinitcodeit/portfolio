@@ -2,6 +2,18 @@ import React from "react";
 import './projects.css'
 
 const Projects = () => {
+
+  const ecommerceUrl = 'https://shopper-ecommerce-website.vercel.app/'
+  
+  const ecommerceHandleClick = ()=>{
+    window.open(ecommerceUrl)
+  }
+  const youtubeUrl = 'https://shubho-youtube-mern.netlify.app/'
+  
+  const youtubeHandleClick = ()=>{
+    window.open(youtubeUrl)
+  }
+
   return (
     <section className="projectPage">
       <h1 className="projectPageTitle">My Projects</h1>
@@ -9,27 +21,26 @@ const Projects = () => {
       
 
       <div className="projects">
-        <div className="projectName1">
-          <h2 className="project1">1. Todo List</h2>
+        <div onClick={ecommerceHandleClick} className="projectName1">
+          <h2 className="project1">1. Ecommerce Website.</h2>
           <p className="project1Desc">
-            Built a robust Todo List web application using the MERN (MongoDB,
-            Express.js, React, Node.js) stack, offering seamless task management
-            with real-time updates and a user-friendly interface{" "}
+          Designed and developed a seamless and intuitive e-commerce website using HTML, CSS, and JavaScript, with enhanced 
+          user interface and experience. Implemented React.js for dynamic and responsive front-end interactions, ensuring a user
+          friendly and aesthetically pleasing online shopping platform. Demonstrated strong skills in web development to create an 
+          engaging digital storefront. 
           </p>
         </div>
 
-        <div className="projectName2">
-          <h2 className="project1">2. Weather Website</h2>
+        <div onClick={youtubeHandleClick} className="projectName2">
+          <h2 className="project1">2. You-tube Clone.</h2>
           <p className="project1Desc">
-            A weather Website created using HTML, CSS, JavaScript and React.JS
-            that provides real-time weather information, forecasts to help users
-            plan their day. Users can check current conditions, track storms of
-            any city in the world.
+          A YouTube clone with a lot of features developed with the MERN stack, JWT for authentication, and Firebase Storage for video and file storage. 
+          This project intends to emulate YouTube's main functionality, allowing users to upload, view, like, comment on, and interact with videos. 
           </p>
         </div>
 
         <div className="projectName3">
-          <h2 className="project1">3. Personal Portfolio Website</h2>
+          <h2 className="project1">3. Personal Portfolio Website.</h2>
           <p className="project1Desc">
             Designed and implemented a personal portfolio website using HTML,
             CSS, JavaScript, and React.Js. showcasing creative and responsive web design.
@@ -39,12 +50,9 @@ const Projects = () => {
         </div>
 
         <div className="projectName4">
-          <h2 className="project1">4. Login And Sign Up Form</h2>
+          <h2 className="project1">4.	To-Do List.</h2>
           <p className="project1Desc">
-            created a login/sign-up web page using HTML, CSS, JavaScript, and
-            React.js. If the user clicks the "Sign Up" button, they can access
-            the sign-up page, and if they click the "Login" button, they will be
-            directed to the login page.
+          	Created a dynamic and user-friendly Todo Form website utilizing the MERN (MongoDB, Express.js, React.js, Node.js) stack. Implemented seamless data management with MongoDB, built a responsive front-end with React. and ensured smooth server-side functionality using Node.js and Express.js.
           </p>
         </div>
       </div>

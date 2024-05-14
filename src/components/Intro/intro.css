@@ -10,13 +10,17 @@
 
 .bg{
     position: absolute;
-    top: -5rem;
+    top: 3rem;
+    bottom: 0;
     z-index: -1;
     right: 0;
     object-fit: cover;
-    height: 100vh;
-    
-  
+    height: 60vh;
+    border: 1px solid white;
+    border-radius: 100px;
+    width: 35vw;
+    margin-right: 20px;
+    margin-top: 60px;
 }
 
 .introContent{
@@ -49,56 +53,51 @@
 .btn{
     background: white;
     margin: 1rem 0;
-    padding: 0.75rem 1.5rem;
+    padding: 0.2rem 1.5rem;
     border-radius: 2rem;
     border: none;
     cursor: pointer;
 }
 
+.btn:hover{
+    border-bottom: 4px solid yellow;
+}
+
+.resume{
+    font-size: 17px;
+    font-weight: 600;
+    padding: 8px;
+}
+
 .btnImg{
     object-fit: cover;
-    margin: 0 0.25rem;
-    height: 1rem;
+    height:1.5rem;
+    padding-top: 8px;
+   
 }
 
-.ig{
-    width: 3rem;
-    cursor: pointer;
-    object-fit: cover;
-}
-
-.ig:hover{
-    border: 1px solid white;
-    border-radius: 50%;
-  
-}
-
-.tweet{
+.github{
     width: 3rem;
     object-fit: cover;
     cursor: pointer;
+    border-radius: 100px;
 }
 
-.tweet:hover{
+.github:hover{
     border: 1px solid white;
     border-radius: 50%;
-    
-}
-
-.fb{
-    width: 3rem;
-    object-fit: cover;
-    cursor: pointer;
-}
-
-.fb:hover{
-    border: 1px solid white;
-    border-radius: 50%;
-    
+    background: white;
 }
 
 .sm{
     display: flex;
+    gap: 8px;
+}
+
+.sm button{
+  border-radius: 100px;
+  width: 3rem;
+
 }
 
 .linkedin{
@@ -116,7 +115,8 @@
 
 @media screen and (max-width:840px) {
     .bg{
-        right: -10vw
+        right: -10vw;
+        display: none;
     }
     .introContent{
         font-size: 10vw;
@@ -128,7 +128,19 @@
 }
 @media screen and (max-width:480px) {
     .bg{
-        right: -10vw
+
+        height: 130px;
+        display: none;
+        align-items: center;
+        justify-content: center;
+        margin-right: 200px;
+        margin-top: 85px;  
+        border: 1px solid white;
+        box-sizing: border-box;
+        border-radius: 30px;
+        object-fit: cover;
+
+        
     }
     .introContent{
         font-size: 10vw;
@@ -136,6 +148,7 @@
     .hello{
         font-size: 4.5vw;
     }
+    
     
 }
 @media screen and (max-width:480px) {

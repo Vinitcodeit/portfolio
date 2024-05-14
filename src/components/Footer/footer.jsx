@@ -5,7 +5,7 @@ import './footer.css'
 const Footer = () => {
   return (
   <footer className='footer'>
- copyright &copy; 2023 Vinit Tambralli. All right received.
+ copyright &copy; 2024 Vinit Tambralli. All rights reserved.
 
   </footer>
 
